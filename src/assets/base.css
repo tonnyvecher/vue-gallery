@@ -1,0 +1,89 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-primary-white: #ffffff;
+  --vt-c-primary-black: #121212;
+  --vt-c-primary-light-gray: #dedede;
+  --vt-c-primary-dark-gray: #575757;
+
+  --vt-c-secondary-white: #fcfcfc;
+  --vt-c-secondary-black: #1a1818;
+  --vt-c-secondary-gray: #9c9c9c;
+
+  --vt-c-accent-red: #9b4b4b;
+  --vt-c-accent-gold: #ab8956;
+}
+
+/* semantic color variables for this project */
+:root {
+  --theme-button-background: var(--vt-c-secondary-white);
+
+  --body-background: var(--vt-c-primary-white);
+
+  --input-search-border-color: var(--vt-c-primary-light-gray);
+  --input-search-background: none;
+  --input-search-color: var(--vt-c-primary-dark-gray);
+  --input-search-placeholder: var(--vt-c-secondary-gray);
+  --input-search-color-border: var(--vt-c-primary-dark-gray);
+
+  --color-text: var(--vt-c-primary-black);
+  --gallery-item-accent: var(--vt-c-accent-red);
+
+  --pagination-arrow-btn: var(--vt-c-primary-light-gray);
+  --pagination-color-btn: var(--vt-c-primary-dark-gray);
+  --pagination-color-btn-hover-border-bottom: var(--vt-c-primary-dark-gray);
+  --pagination-color-btn-active: var(--vt-c-primary-light-gray);
+}
+
+[data-theme='dark'] {
+  --theme-button-background: var(--vt-c-secondary-black);
+
+  --body-background: var(--vt-c-primary-black);
+
+  --input-search-border-color: var(--vt-c-secondary-black);
+  --input-search-background: var(--vt-c-secondary-black);
+  --input-search-color: var(--vt-c-primary-light-gray);
+  --input-search-placeholder: var(--vt-c-primary-dark-gray);
+  --input-search-color-border: var(--vt-c-primary-light-gray);
+
+  --color-text: var(--vt-c-primary-light-gray);
+  --gallery-item-accent: var(--vt-c-accent-gold);
+
+  --pagination-arrow-btn: var(--vt-c-primary-dark-gray);
+  --pagination-color-btn: var(--vt-c-primary-light-gray);
+  --pagination-color-btn-hover-border-bottom: var(--vt-c-secondary-gray);
+  --pagination-color-btn-active: var(--vt-c-secondary-black);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--body-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
